@@ -1,0 +1,11 @@
+.disp-block {
+    display: block;
+}
+
+.disp-inline {
+    display: inline;
+}
+
+.disp-flex {
+    display: flex;
+}

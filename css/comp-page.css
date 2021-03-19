@@ -1,0 +1,17 @@
+.comp-disp {
+    margin-left: 20em;
+}
+
+.comp-disp-container {
+    align-items: center;
+}
+
+.comp-code-container {
+    width: 50em;
+    padding: 0;
+}
+
+.comp-code-container > code {
+    border-radius: 1em;
+    padding: 0;
+}

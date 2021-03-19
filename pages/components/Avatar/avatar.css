@@ -1,0 +1,70 @@
+.avatar {
+    margin: 0.5em;
+    position: relative;
+}
+
+.avatar > img {
+    border-radius: 50%;
+    height: 2em;
+}
+
+.avatar-xl > img {
+    height: 4em;
+}
+
+.avatar-lg > img {
+    height: 3em;
+}
+
+.avatar-sm > img {
+    height: 1.5em;
+}
+
+.avatar-xs > img {
+    height: 1em;
+}
+
+.avatar-presence {
+    border: 2px solid #fff;
+    background-color: #bcc3ce;
+    padding: 8%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0em;
+    right: 0em;
+}
+
+.avatar > .avatar-presence {
+    bottom: 0.2em;
+    right: 0.1em;
+}
+
+.avatar-xl > .avatar-presence {
+    bottom: 0.3em;
+    right: 0.3em;
+}
+
+.avatar-lg > .avatar-presence {
+    bottom: 0.2em;
+    right: 0.15em;
+}
+
+.avatar-sm > .avatar-presence {
+    border: 1px solid #fff;
+    bottom: 0.25em;
+    right: 0.1em;
+}
+
+.avatar-xs > .avatar-presence {
+    border: 1px solid #fff;
+    bottom: 0.2em;
+    right: 0.05em;
+}
+
+.avatar > .dnd {
+    background-color: #ff0000;
+}
+
+.avatar > .online {
+    background-color: #32b643;
+}
