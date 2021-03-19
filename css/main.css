@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    margin-top: 1.5em;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.brandname-link {
+    margin-left: 5em;
+}
+
+.brandname {
+    display: inline-flex;
+    align-items: center;
+    max-width: max-content;
+    cursor: pointer;
+    color: #000;
+}
+
+.brandname-logo {
+    width: 2em;
+    margin-right: 0.5em;
+}
+
+.brandname-title {
+    font-size: 1.4rem;
+}
+
+.docs-link {
+    float: right;
+    margin-top: 0.5em;
+    margin-right: 4em;
+    font-size: 1.05rem;
+    cursor: pointer;
+}
+
+.docs-link:hover {
+    text-decoration: underline;
+}
+
+.main-container {
+    margin-top: 8em;
+}
+
+.main-logo {
+    width: 10em;
+    display: block;
+    margin: 0 auto;
+}
+
+.main-desc {
+    font-size: 1.5rem;
+    max-width: 20em;
+    text-align: center;
+    margin: 2em auto;
+}
+
+.button-container {
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+.main-start,
+.main-github {
+    border: none;
+    background-color: #00b594;
+    color: #fff;
+    height: 3.1em;
+    width: 10.6em;
+    font-size: 1rem;
+    border-radius: 2em;
+    margin: 0 0.7em;
+    cursor: pointer;
+}
+
+.main-github {
+    border: solid 2px #00b594;
+    background-color: transparent;
+    color: #000;
+}
