@@ -1,9 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+    --primary-colour: #93dacd;
+    --secondary-colour: #e2e3e5;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.site-nav {
+    position: fixed;
+    margin-left: 5em;
+    margin-top: 0.5em;
+}
+
+.nav-heading {
+    font-size: 1.07rem;
+    padding: 0.2em 0.5em;
+    border-radius: 0.3em;
+    display: block;
+    width: 100%;
+}
+
+.nav-heading:hover {
+    background-color: #d6f3ee;
+}
+
+.nav-heading > a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #585a5c;
+}
+
+.nav-heading:hover > a {
+    color: #232425;
+}
+
+.nav-comp-heading {
+    margin-top: 0.6em;
+}
+
+.nav-comp-section {
+    margin-top: 0.5em;
+    padding-left: 0.5em;
+}
+
+.component-links {
+    list-style: none;
+    margin-bottom: 0.5em;
+    font-size: 1.015rem;
+    padding: 0.2em 0.5em;
+    border-radius: 0.2em;
+}
+
+.component-links:hover {
+    background-color: #d6f3ee;
+}
+
+.component-links > a {
+    display: block;
+    text-decoration: none;
+    color: #585a5c;
+    width: 100%;
+}
+
+.component-links:hover > a {
+    color: #232425;
+}
+
 .comp-disp {
-    margin-left: 20em;
+    margin-left: 25em;
+    margin-top: 7em;
+}
+
+.sub-comp-header {
+    margin-top: 2em;
+    font-size: 1.4rem;
 }
 
 .comp-disp-container {
     align-items: center;
+}
+
+.comp-desc {
+    width: 43em;
+    font-size: 1.1rem;
+    margin-left: 0.5em;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5em;
+}
+
+.highlight {
+    background-color: #d6f3ee;
+    color: #034438;
+    padding: 0 0.2em;
+    border-radius: 0.3em;
 }
 
 .comp-code-container {
@@ -14,4 +108,29 @@
 .comp-code-container > code {
     border-radius: 1em;
     padding: 0;
+    line-height: 1.5em;
+    padding-left: 0.5em;
+}
+
+.github-link {
+    float: right;
+    margin-top: 0.5em;
+    margin-right: 4em;
+    font-size: 1.05rem;
+    cursor: pointer;
+    color: #000;
+}
+
+.github-btn {
+    border: none;
+    height: 1.5em;
+    font-size: 1rem;
+    border-radius: 2em;
+    padding: 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.5em;
+    cursor: pointer;
+    border: solid 2px #00b594;
+    background-color: transparent;
+    color: #000;
 }
