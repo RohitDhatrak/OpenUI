@@ -1,0 +1,39 @@
+.alert {
+    background-color: var(--primary-colour);
+    padding: 1em;
+    margin: 1em 0;
+    width: 45em;
+    border-radius: 0.5em;
+}
+
+.alert-secondary {
+    background-color: var(--secondary-colour);
+}
+
+.alert-sucess {
+    background-color: #d1e7dd;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+}
+
+.alert-info {
+    background-color: #cff4fc;
+}
+
+.alert-light {
+    background-color: #fefefe;
+}
+
+.alert-dark {
+    background-color: #d3d3d4;
+}
+
+.alert-dynamic-width {
+    width: max-content;
+}
