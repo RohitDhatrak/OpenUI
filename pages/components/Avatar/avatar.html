@@ -5,10 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Avatar</title>
-        <link rel="stylesheet" href="/css/main.css" />
-        <link rel="stylesheet" href="/css/getstarted.css" />
-        <link rel="stylesheet" href="/css/components.css" />
+        <link rel="stylesheet" href="/css/header.css" />
         <link rel="stylesheet" href="/css/comp-page.css" />
+        <link rel="stylesheet" href="/css/components.css" />
         <link rel="stylesheet" href="/pages/components/Avatar/avatar.css" />
         <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/images/logo.png" />
@@ -24,14 +23,17 @@
                     <img class="brandname-logo" src="/images/logo.png" alt="" />
                     <span class="brandname-title">Open UI</span>
                 </span>
+                <a href="https://github.com/RohitDhatrak/OpenUI" class="github-link">
+                    <button  class="github-btn">GitHub</button>
+                </a>
             </a>
         </header>
         <nav class="site-nav">
             <div class="nav-heading nav-getstarted">
-                <a href="">Getting Started</a>
+                <a href="/pages/getstarted.html">Getting Started</a>
             </div>
             <div class="nav-heading nav-comp-heading">
-                <a href="">Components</a>
+                <a href="/pages/components.html">Components</a>
             </div>
             <ul class="nav-comp-section">
                 <li class="component-links">
@@ -79,11 +81,11 @@
                 <li class="component-links">
                     <a href="/pages/components/Toast/toast.html">Toast</a>
                 </li>
-                <li class="component-links"></li>
             </ul>
         </nav>
         <main class="comp-disp">
             <h1 class="comp-disp-header">Avatar</h1>
+            <h2 class="sub-comp-header">Standard Avatars</h2>
             <div class="comp-disp-container disp-flex">
                 <figure class="avatar avatar-xl disp-inline">
                     <img
@@ -117,22 +119,19 @@
                 </figure>
             </div>
 
+            <p class="comp-desc">Add the <span class="highlight">avatar</span> class to <img> element. There are 4 additional sizes available, including <span class="highlight">avatar-xl</span> (4em), <span class="highlight">avatar-lg</span> (3em), <span class="highlight">avatar-sm</span> (1.5em), and <span class="highlight">avatar-xs</span> (1em). By default, the avatar size is 2em. </p>
+
             <pre class="comp-code-container"><code class="html">
     &lt;figure class="avatar avatar-xl">
-        &lt;img
-            src="/images/avatar.png"
-            alt="..."
-        />
+        &lt;img src="..." alt="..."/>
     &lt;/figure>
 
     &lt;figure class="avatar">
-        &lt;img
-            src="/images/avatar.png"
-            alt="..."
-        />
+        &lt;img src="..." alt="..."/>
     &lt;/figure>
             </code></pre>
-
+            
+            <h2 class="sub-comp-header">Avatars with status</h2>
             <div class="comp-disp-container disp-flex">
                 <figure class="avatar avatar-xl disp-inline">
                     <img
@@ -170,23 +169,21 @@
                     <div class="avatar-presence dnd"></div>
                 </figure>
             </div>
+
+            <p class="comp-desc">Avatars support presence indicators. You can add an element with the <span class="highlight">avatar-presence</span> class, and add <span class="highlight">online</span> or <span class="highlight">dnd</span> class for different status colors. The default is gray which means offline. </p>
+
             <pre class="comp-code-container"><code class="html">
     &lt;figure class="avatar avatar-xl">
-        &lt;img
-            src="/images/avatar.png"
-            alt="..."
-        />
+        &lt;img src="..." alt="..."/>
         &lt;div class="avatar-presence dnd"></div>
     &lt;/figure>
 
     &lt;figure class="avatar-lg">
-        &lt;img
-            src="/images/avatar.png"
-            alt="..."
-        />
+        &lt;img src="..." alt="..."/>
         &lt;div class="avatar-presence"></div>
     &lt;/figure>
             </code></pre>
+
         </main>
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
