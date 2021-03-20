@@ -1,33 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 * {
     box-sizing: border-box;
-}
-
-.header {
-    margin-top: 1.5em;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-}
-
-.brandname-link {
-    margin-left: 5em;
-}
-
-.brandname {
-    display: inline-flex;
-    align-items: center;
-    max-width: max-content;
-    cursor: pointer;
-    color: #000;
-}
-
-.brandname-logo {
-    width: 2em;
-    margin-right: 0.5em;
-}
-
-.brandname-title {
-    font-size: 1.4rem;
+    font-family: "Montserrat", sans-serif;
 }
 
 .docs-link {
@@ -43,7 +18,7 @@
 }
 
 .main-container {
-    margin-top: 8em;
+    margin-top: 10em;
 }
 
 .main-logo {
