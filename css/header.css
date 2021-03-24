@@ -10,12 +10,13 @@
     position: fixed;
     top: 0;
     width: 100vw;
-    background-color: #fff;
     z-index: 1;
+    font-size: 1.3rem;
+    background-color: #fff;
 }
 
 .brandname-link {
-    margin-left: 5em;
+    margin-left: 4.3em;
 }
 
 .brandname {
