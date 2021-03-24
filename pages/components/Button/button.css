@@ -1,0 +1,86 @@
+.btn {
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5em 1em;
+    margin: 0.1em;
+    background-color: var(--primary-colour);
+    border-radius: 0.5em;
+}
+
+.btn-primary {
+    background-color: var(--primary-colour);
+    color: var(--primary-font-colour);
+    opacity: 0.9;
+}
+
+.btn-primary:hover {
+    opacity: 1;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-colour);
+    color: var(--secondary-font-colour);
+    opacity: 0.9;
+}
+
+.btn-secondary:hover {
+    opacity: 1;
+}
+
+.btn-success {
+    background-color: #10b981;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.btn-success:hover {
+    opacity: 1;
+}
+
+.btn-outline-primary {
+    color: var(--primary-colour);
+    border: solid 1px var(--primary-colour);
+    background-color: transparent;
+    opacity: 0.9;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus-visible {
+    background-color: var(--primary-colour);
+    color: var(--primary-font-colour);
+}
+
+.btn-outline-secondary {
+    color: var(--secondary--colour);
+    border: solid 1px var(--secondary-colour);
+    background-color: transparent;
+    opacity: 0.9;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
+    background-color: var(--secondary-colour);
+    color: var(--secondary-font-colour);
+}
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-icon > img {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.btn-icon > span {
+    font-weight: 500;
+    margin-left: 0.4em;
+}
+
+.btn-delete {
+    background-color: #ef4444;
+    color: #fff;
+}
