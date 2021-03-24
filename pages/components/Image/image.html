@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Title</title>
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/comp-page.css" />
+        <link rel="stylesheet" href="/css/components.css" />
+        <link rel="stylesheet" href="/pages/components/Image/image.css" />
+        <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
+        <link rel="stylesheet" href="/css/night-owl.css" />
+    </head>
+    <body>
+        <header class="header">
+            <a class="brandname-link" href="/index.html">
+                <span class="brandname">
+                    <img
+                        class="brandname-logo"
+                        src="/images/logo.png"
+                        width="2em"
+                        alt=""
+                    />
+                    <span class="brandname-title">Open UI</span>
+                </span>
+                <a
+                    href="https://github.com/RohitDhatrak/OpenUI"
+                    class="github-link"
+                >
+                    <button class="github-btn">GitHub</button>
+                </a>
+            </a>
+        </header>
+        <nav class="site-nav">
+            <div class="nav-heading nav-getstarted">
+                <a href="/pages/getstarted.html">Getting Started</a>
+            </div>
+            <div class="nav-heading nav-comp-heading">
+                <a href="/pages/components.html">Components</a>
+            </div>
+            <ul class="nav-comp-section">
+                <li class="component-links">
+                    <a href="/pages/components/Avatar/avatar.html">Avatar</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Alert/alert.html">Alert</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Badge/badge.html">Badge</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Button/button.html">Button</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Card/card.html">Card</a>
+                </li>
+                <li class="component-links">
+                    <a
+                        style="color: #027a64"
+                        href="/pages/components/Image/image.html"
+                        >Image</a
+                    >
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Input/input.html">Input</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Lists/lists.html">Lists</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Navigation/navigation.html"
+                        >Navigation</a
+                    >
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Modal/modal.html">Modal</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Rating/rating.html">Rating</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Rating/rating.html">Slider</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Grid/grid.html">Grid</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Text/text.html">Text</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Toast/toast.html">Toast</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="comp-disp">
+            <h1 class="comp-disp-header">Image</h1>
+            <h2 class="sub-comp-header">Responsive Image</h2>
+
+            <div class="comp-disp-container disp-flex">
+                <img src="/images/dogs.jpg" alt="" class="img-res" />
+            </div>
+
+            <p class="comp-desc">Component Description</p>
+
+            <pre class="comp-code-container"><code class="html">
+    &lt;img src="..." alt="" class="img-res" />
+            </code></pre>
+
+            <h2 class="sub-comp-header">Round Image</h2>
+
+            <div class="comp-disp-container disp-flex">
+                <img src="/images/puppy.jpg" alt="" class="img-round" />
+            </div>
+
+            <p class="comp-desc">Component Description</p>
+
+            <pre class="comp-code-container"><code class="html">
+    &lt;img src="..." alt="" class="img-round" />
+            </code></pre>
+        </main>
+
+        <script src="/javascript/highlight.js"></script>
+        <script>
+            hljs.highlightAll();
+        </script>
+    </body>
+</html>
