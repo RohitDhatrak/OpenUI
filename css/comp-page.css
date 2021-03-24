@@ -1,19 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 :root {
-    --primary-colour: #93dacd;
-    --secondary-colour: #e2e3e5;
+    --primary-colour: #00b594;
+    --secondary-colour: #d0f7f0;
+    --primary-font-colour: #fff;
+    --secondary-font-colour: #000;
+    --font: "Montserrat", sans-serif;
 }
 
 * {
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    font-weight: 400;
 }
 
 .site-nav {
     position: fixed;
+    top: 0;
+    bottom: 0;
     margin-left: 5em;
-    margin-top: 0.5em;
+    margin-top: 7em;
+    overflow-y: auto;
 }
 
 .nav-heading {
@@ -51,9 +57,8 @@
 .component-links {
     list-style: none;
     margin-bottom: 0.5em;
-    font-size: 1.015rem;
-    padding: 0.2em 0.5em;
-    border-radius: 0.2em;
+    font-size: 1rem;
+    border-radius: 0.4em;
 }
 
 .component-links:hover {
@@ -63,6 +68,7 @@
 .component-links > a {
     display: block;
     text-decoration: none;
+    padding: 0.2em 0.5em;
     color: #585a5c;
     width: 100%;
 }
@@ -72,6 +78,7 @@
 }
 
 .comp-disp {
+    max-width: 50%;
     margin-left: 25em;
     margin-top: 7em;
 }
@@ -86,7 +93,6 @@
 }
 
 .comp-desc {
-    width: 43em;
     font-size: 1.1rem;
     margin-left: 0.5em;
     font-family: "Montserrat", sans-serif;
@@ -101,7 +107,6 @@
 }
 
 .comp-code-container {
-    width: 50em;
     padding: 0;
 }
 
@@ -134,3 +139,16 @@
     background-color: transparent;
     color: #000;
 }
+
+@media (max-width: 480px) {
+    .site-nav {
+        display: block;
+        display: none;
+    }
+
+    .comp-disp {
+        max-width: 95%;
+        margin-left: 1em;
+        margin-top: 7em;
+    }
+
