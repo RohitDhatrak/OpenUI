@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Badge</title>
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/comp-page.css" />
+        <link rel="stylesheet" href="/css/components.css" />
+        <link rel="stylesheet" href="/pages/components/Badge/badge.css" />
+        <link rel="stylesheet" href="/pages/components/Avatar/avatar.css" />
+        <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
+        <link rel="stylesheet" href="/css/night-owl.css" />
+    </head>
+    <body>
+        <header class="header">
+            <a class="brandname-link" href="/index.html">
+                <span class="brandname">
+                    <img
+                        class="brandname-logo"
+                        src="/images/logo.png"
+                        width="2em"
+                        alt=""
+                    />
+                    <span class="brandname-title">Open UI</span>
+                </span>
+                <a
+                    href="https://github.com/RohitDhatrak/OpenUI"
+                    class="github-link"
+                >
+                    <button class="github-btn">GitHub</button>
+                </a>
+            </a>
+        </header>
+        <nav class="site-nav">
+            <div class="nav-heading nav-getstarted">
+                <a href="/pages/getstarted.html">Getting Started</a>
+            </div>
+            <div class="nav-heading nav-comp-heading">
+                <a href="/pages/components.html">Components</a>
+            </div>
+            <ul class="nav-comp-section">
+                <li class="component-links">
+                    <a href="/pages/components/Avatar/avatar.html">Avatar</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Alert/alert.html">Alert</a>
+                </li>
+                <li class="component-links">
+                    <a
+                        style="color: #027a64"
+                        href="/pages/components/Badge/badge.html"
+                        >Badge</a
+                    >
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Button/button.html">Button</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Card/card.html">Card</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Image/image.html">Image</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Input/input.html">Input</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Lists/lists.html">Lists</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Navigation/navigation.html"
+                        >Navigation</a
+                    >
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Modal/modal.html">Modal</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Rating/rating.html">Rating</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Rating/rating.html">Slider</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Grid/grid.html">Grid</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Text/text.html">Text</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Toast/toast.html">Toast</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="comp-disp">
+            <h1 class="comp-disp-header">Badge</h1>
+            <h2 class="sub-comp-header">Avatars with Badge</h2>
+
+            <div class="comp-disp-container disp-flex">
+                <figure class="avatar avatar-xl badge disp-inline">
+                    <img
+                        src="https://picturepan2.github.io/spectre/img/avatar-2.png"
+                        alt="avatar demo"
+                        height="4em"
+                    />
+                    <div class="badge-count">99</div>
+                </figure>
+                <figure class="avatar avatar-lg badge disp-inline">
+                    <img
+                        src="https://picturepan2.github.io/spectre/img/avatar-3.png"
+                        alt="avatar demo"
+                        height="3em"
+                    />
+                    <div class="badge-count">8</div>
+                </figure>
+                <figure class="avatar badge disp-inline">
+                    <img
+                        src="https://picturepan2.github.io/spectre/img/avatar-1.png"
+                        alt="avatar demo"
+                        height="2em"
+                    />
+                    <div class="badge-count">8</div>
+                </figure>
+            </div>
+
+            <p class="comp-desc">
+                Add a div in the Avatar component wiht a class
+                <span class="highlight">badge-count</span>. Check out the
+                <a class="highlight" href="">Avatar</a>
+                component for instrucions on how to use it.
+            </p>
+
+            <pre class="comp-code-container"><code class="html">
+    &lt;figure class="avatar avatar-xl badge">
+        &lt;img src="..." alt=""/>
+        &lt;div class="badge-count">8&lt;/div>
+    &lt;/figure>
+    
+    &lt;figure class="avatar badge">
+        &lt;img src="..." alt=""/>
+        &lt;div class="badge-count">8&lt;/div>
+    &lt;/figure>
+            </code></pre>
+
+            <h2 class="sub-comp-header">Icons with Badge</h2>
+
+            <div class="comp-disp-container disp-flex">
+                <figure class="badge">
+                    <img src="/images/cart.svg" alt="" />
+                    <div class="badge-count">8</div>
+                </figure>
+                <figure class="badge">
+                    <img src="/images/mail.svg" alt="" />
+                    <div class="badge-count">8</div>
+                </figure>
+            </div>
+            <p class="comp-desc">
+                Add the <span class="highlight">badge</span> class to a non self
+                closing element. Add the icon in the img tag. Add a div having a
+                class <span class="highlight">badge-count</span> with the
+                content that should be shown in the badge.
+            </p>
+
+            <pre class="comp-code-container"><code class="html">
+    &lt;figure class="badge">
+        &lt;img src="..." alt="" />
+        &lt;div class="badge-count">8&lt;/div>
+    &lt;/figure>
+
+    &lt;figure class="badge">
+        &lt;img src="..." alt="" />
+        &lt;div class="badge-count">8&lt;/div>
+    &lt;/figure>
+            </code></pre>
+        </main>
+
+        <script src="/javascript/highlight.js"></script>
+        <script>
+            hljs.highlightAll();
+        </script>
+    </body>
+</html>

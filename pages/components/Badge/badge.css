@@ -1,0 +1,21 @@
+.badge {
+    position: relative;
+}
+
+.badge-count {
+    position: absolute;
+    background-color: #f44336;
+    color: #fff;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    font-size: 60%;
+    width: 35%;
+    height: 30%;
+    min-width: 15px;
+    min-height: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
