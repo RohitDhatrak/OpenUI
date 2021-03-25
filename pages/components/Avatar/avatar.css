@@ -8,6 +8,11 @@
     height: 2em;
 }
 
+.avatar-std > img {
+    border-radius: 50%;
+    height: 2em;
+}
+
 .avatar-xl > img {
     height: 4em;
 }
@@ -39,6 +44,11 @@
     right: 0.1em;
 }
 
+.avatar-std > .avatar-presence {
+    bottom: 0.2em;
+    right: 0.1em;
+}
+
 .avatar-xl > .avatar-presence {
     bottom: 0.3em;
     right: 0.3em;
@@ -61,10 +71,14 @@
     right: 0.05em;
 }
 
-.avatar > .dnd {
+.avatar-presence.offline {
+    background-color: #bcc3ce;
+}
+
+.avatar-presence.dnd {
     background-color: #ff0000;
 }
 
-.avatar > .online {
+.avatar-presence.online {
     background-color: #32b643;
 }
