@@ -10,11 +10,11 @@
     top: 0;
     right: 0;
     font-size: 60%;
+    font-style: var(--font);
     width: 35%;
     height: 30%;
     min-width: 15px;
     min-height: 15px;
-    align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
