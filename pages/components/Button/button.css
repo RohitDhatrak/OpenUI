@@ -11,7 +11,7 @@
 .btn-primary {
     background-color: var(--primary-colour);
     color: var(--primary-font-colour);
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .btn-primary:hover {
@@ -21,20 +21,20 @@
 .btn-secondary {
     background-color: var(--secondary-colour);
     color: var(--secondary-font-colour);
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .btn-secondary:hover {
     opacity: 1;
 }
 
-.btn-success {
-    background-color: #10b981;
+.btn-danger {
+    background-color: #ef4444;
     color: #fff;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
-.btn-success:hover {
+.btn-danger:hover {
     opacity: 1;
 }
 
@@ -42,7 +42,6 @@
     color: var(--primary-colour);
     border: solid 1px var(--primary-colour);
     background-color: transparent;
-    opacity: 0.9;
 }
 
 .btn-outline-primary:hover,
@@ -55,13 +54,24 @@
     color: var(--secondary--colour);
     border: solid 1px var(--secondary-colour);
     background-color: transparent;
-    opacity: 0.9;
 }
 
 .btn-outline-secondary:hover,
-.btn-outline-secondary:focus {
+.btn-outline-secondary:focus-visible {
     background-color: var(--secondary-colour);
     color: var(--secondary-font-colour);
+}
+
+.btn-outline-danger {
+    color: #ef4444;
+    border: solid 1px #ef4444;
+    background-color: transparent;
+}
+
+.btn-outline-danger:hover,
+.btn-outline-danger:focus-visible {
+    background-color: #ef4444;
+    color: #fff;
 }
 
 .btn-icon {
@@ -78,9 +88,4 @@
 .btn-icon > span {
     font-weight: 500;
     margin-left: 0.4em;
-}
-
-.btn-delete {
-    background-color: #ef4444;
-    color: #fff;
 }
