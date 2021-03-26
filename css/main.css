@@ -11,6 +11,8 @@
     margin-right: 4em;
     font-size: 1.05rem;
     cursor: pointer;
+    text-decoration: none;
+    color: #000;
 }
 
 .docs-link:hover {
