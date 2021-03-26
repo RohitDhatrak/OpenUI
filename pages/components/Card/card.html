@@ -25,21 +25,16 @@
                     />
                     <span class="brandname-title">Open UI</span>
                 </span>
-                <a
-                    href="https://github.com/RohitDhatrak/OpenUI"
-                    class="github-link"
-                >
-                    <button class="github-btn">GitHub</button>
-                </a>
             </a>
         </header>
         <nav class="site-nav">
-            <div class="nav-heading nav-getstarted">
-                <a href="/pages/getstarted.html">Getting Started</a>
+            <div class="nav-main-heading">Getting Started</div>
+
+            <div class="nav-sub-heading nav-getstarted">
+                <a href="/pages/usage.html">Usage</a>
             </div>
-            <div class="nav-heading nav-comp-heading">
-                <a href="/pages/components.html">Components</a>
-            </div>
+
+            <div class="nav-main-heading">Components</div>
             <ul class="nav-comp-section">
                 <li class="component-links">
                     <a href="/pages/components/Avatar/avatar.html">Avatar</a>
@@ -74,21 +69,6 @@
                         >Navigation</a
                     >
                 </li>
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Modal/modal.html">Modal</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Rating/rating.html">Rating</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Rating/rating.html">Slider</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Grid/grid.html">Grid</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Text/text.html">Text</a>
-                </li> -->
                 <li class="component-links">
                     <a href="/pages/components/Toast/toast.html">Toast</a>
                 </li>
@@ -96,9 +76,15 @@
         </nav>
         <main class="comp-disp">
             <h1 class="comp-disp-header">Card</h1>
-            <h2 class="sub-comp-header">Vertical Card</h2>
+            <pre class="comp-code-container"><code class="html">
+            @import url("https://openui.netlify.app/pages/components/Card/card.css");
+            &lt;link rel="stylesheet" 
+            href="https://openui.netlify.app/pages/components/Card/card.css">
+            </code></pre>
 
-            <div class="comp-disp-container disp-flex">
+            <h2 class="sub-comp-header">Horizontal and Vertical Card</h2>
+
+            <div class="comp-disp-container disp-flex flx-wrap">
                 <div class="card">
                     <img src="/images/hp-book-cover.jpg" alt="" class="cover" />
                     <div class="icon">
@@ -115,28 +101,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <p class="comp-desc">Component Description</p>
-
-            <pre class="comp-code-container"><code class="html">
-    &lt;div class="card">
-        &lt;img src="/images/hp-book-cover.jpg" alt="" class="cover" />
-        &lt;div class="icon">
-            &lt;img src="/images/heart.svg" alt="" />
-        &lt;/div>
-        &lt;div class="text">
-            &lt;div class="heading">Harry Potter and the Sorcerer's Stone&lt;/div>
-            &lt;div class="sub-heading">by J.K Rowling&lt;/div>
-            &lt;span class="price">₹237&lt;/span>
-            &lt;span class="price-original">₹499&lt;/span>
-        &lt;/div>
-    &lt;/div>
-            </code></pre>
-
-            <h2 class="sub-comp-header">Horizontal Card</h2>
-
-            <div class="comp-disp-container disp-flex">
                 <div class="card card-hz">
                     <img src="/images/hp-book-cover.jpg" alt="" class="cover" />
                     <div class="icon">
@@ -147,7 +112,7 @@
                             Harry Potter and the Sorcerer's Stone
                         </div>
                         <div class="sub-heading">by J.K Rowling</div>
-                        <div class="description">
+                        <div class="para">
                             Harry Potter's life is miserable. His parents are
                             dead and he's stuck with his heartless relatives,
                             who force him to live in a tiny closet under the
@@ -162,10 +127,24 @@
                 </div>
             </div>
 
-            <p class="comp-desc">Component Description</p>
+            <p class="comp-desc"></p>
 
             <pre class="comp-code-container"><code class="html">
-                Reminder change highlight and page title
+    &lt;div class="card">
+        &lt;img src="..." alt="" class="cover" />
+        &lt;div class="icon">
+            &lt;img src="..." alt="" />
+        &lt;/div>
+        &lt;div class="text">
+            &lt;div class="heading">Harry Potter and the Sorcerer's Stone&lt;/div>
+            &lt;div class="sub-heading">by J.K Rowling&lt;/div>
+            &lt;div class="para">Harry Potter's life is...&lt;/div>
+            &lt;div class="price">
+                &lt;span class="price">₹237&lt;/span>
+                &lt;span class="price-original">₹499&lt;/span>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
             </code></pre>
         </main>
 
