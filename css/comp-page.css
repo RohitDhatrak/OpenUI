@@ -22,31 +22,41 @@
     overflow-y: auto;
 }
 
-.nav-heading {
-    font-size: 1.07rem;
+.nav-main-heading {
+    font-size: 1rem;
     padding: 0.2em 0.5em;
     border-radius: 0.3em;
     display: block;
     width: 100%;
+    color: #626364;
+    font-weight: 500;
+    margin-top: 0.6em;
 }
 
-.nav-heading:hover {
+.nav-sub-heading {
+    font-size: 1.07rem;
+    padding: 0.2em 0.5em;
+    border-radius: 0.3em;
+    display: block;
+    width: 93%;
+    color: #585a5c;
+    margin-top: 0.3em;
+    margin-left: 0.5em;
+}
+
+.nav-sub-heading:hover {
     background-color: #d6f3ee;
 }
 
-.nav-heading > a {
+.nav-sub-heading > a {
     display: block;
     width: 100%;
     text-decoration: none;
     color: #585a5c;
 }
 
-.nav-heading:hover > a {
+.nav-sub-heading:hover > a {
     color: #232425;
-}
-
-.nav-comp-heading {
-    margin-top: 0.6em;
 }
 
 .nav-comp-section {
@@ -117,27 +127,19 @@
     padding-left: 0.5em;
 }
 
-.github-link {
+.comp-link {
     float: right;
     margin-top: 0.5em;
-    margin-right: 4em;
+    margin-right: 6em;
+    margin-bottom: 0.7em;
     font-size: 1.05rem;
     cursor: pointer;
     color: #000;
+    text-decoration: none;
 }
 
-.github-btn {
-    border: none;
-    height: 1.5em;
-    font-size: 1rem;
-    border-radius: 2em;
-    padding: 1em;
-    padding-top: 0.1em;
-    padding-bottom: 0.5em;
-    cursor: pointer;
-    border: solid 2px #00b594;
-    background-color: transparent;
-    color: #000;
+.comp-link:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 480px) {
@@ -149,6 +151,11 @@
     .comp-disp {
         max-width: 95%;
         margin-left: 1em;
+        margin-right: 1em;
         margin-top: 7em;
+    }
+
+    .comp-code-container {
+        display: none;
     }
 }
