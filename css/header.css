@@ -13,10 +13,14 @@
     z-index: 1;
     font-size: 1.3rem;
     background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .brandname-link {
-    margin-left: 4.3em;
+    margin-left: 4.1em;
+    text-decoration: none;
 }
 
 .brandname {
@@ -34,4 +38,14 @@
 
 .brandname-title {
     font-size: 1.4rem;
+}
+
+@media (max-width: 480px) {
+    .brandname-link {
+        margin-left: 0.8em;
+    }
+
+    .header {
+        padding-top: 1em;
+    }
 }
