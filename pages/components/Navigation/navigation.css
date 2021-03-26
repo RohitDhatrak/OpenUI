@@ -1,0 +1,48 @@
+.nav {
+    width: 100vw;
+    z-index: 1;
+    font-size: 1.3rem;
+    background-color: #e8f7f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-brand-link {
+    text-decoration: none;
+}
+
+.nav-brand-link > span {
+    display: inline-flex;
+    align-items: center;
+    max-width: max-content;
+    cursor: pointer;
+    color: #000;
+    margin-left: 1em;
+}
+
+.nav-brand-logo {
+    width: 2em;
+    margin-right: 0.5em;
+}
+
+.nav-brand-name {
+    font-size: 1.4rem;
+    margin-top: 0.15em;
+}
+
+.nav-link-section {
+    margin-right: 1em;
+}
+
+.nav-link {
+    display: inline;
+    list-style: none;
+    font-size: 1rem;
+    margin: 0.5em;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}

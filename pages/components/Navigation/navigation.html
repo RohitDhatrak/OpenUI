@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Navigation</title>
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/comp-page.css" />
+        <link rel="stylesheet" href="/css/components.css" />
+        <link
+            rel="stylesheet"
+            href="/pages/components/Navigation/navigation.css"
+        />
+        <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
+        <link rel="stylesheet" href="/css/night-owl.css" />
+    </head>
+    <body>
+        <header class="header">
+            <a class="brandname-link" href="/index.html">
+                <span class="brandname">
+                    <img
+                        class="brandname-logo"
+                        src="/images/logo.png"
+                        width="2em"
+                        alt=""
+                    />
+                    <span class="brandname-title">Open UI</span>
+                </span>
+            </a>
+        </header>
+        <nav class="site-nav">
+            <div class="nav-main-heading">Getting Started</div>
+
+            <div class="nav-sub-heading nav-getstarted">
+                <a href="/pages/usage.html">Usage</a>
+            </div>
+
+            <div class="nav-main-heading">Components</div>
+            <ul class="nav-comp-section">
+                <li class="component-links">
+                    <a href="/pages/components/Avatar/avatar.html">Avatar</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Alert/alert.html">Alert</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Badge/badge.html">Badge</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Button/button.html">Button</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Card/card.html">Card</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Image/image.html">Image</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Input/input.html">Input</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Lists/lists.html">List</a>
+                </li>
+                <li class="component-links">
+                    <a
+                        style="color: #027a64"
+                        href="/pages/components/Navigation/navigation.html"
+                        >Navigation</a
+                    >
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Toast/toast.html">Toast</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="comp-disp">
+            <h1 class="comp-disp-header">Navigation</h1>
+            <pre class="comp-code-container"><code class="html">
+        @import url("https://openui.netlify.app/pages/components/Navigation/navigation.css");
+        &lt;link rel="stylesheet" 
+        href="https://openui.netlify.app/pages/components/Navigation/navigation.css">
+            </code></pre>
+
+            <h2 class="sub-comp-header">Desktop Navigation</h2>
+
+            <div class="comp-disp-container disp-flex">
+                <header class="nav">
+                    <a class="nav-brand-link" href="">
+                        <span>
+                            <img
+                                class="nav-brand-logo"
+                                src="/images/logo.png"
+                                width="2em"
+                                alt=""
+                            />
+                            <span class="nav-brand-name">Open UI</span>
+                        </span>
+                    </a>
+                    <ul class="nav-link-section">
+                        <li class="nav-link">Components</li>
+                        <li class="nav-link">Resources</li>
+                        <li class="nav-link">Examples</li>
+                    </ul>
+                </header>
+            </div>
+
+            <pre class="comp-code-container"><code class="html">
+    &lt;header class="nav">
+        &lt;a class="nav-brand-link" href="">
+            &lt;span>
+                &lt;img class="nav-brand-logo" src="..." alt=""/>
+                &lt;span class="nav-brand-name">Open UI&lt;/span>
+            &lt;/span>
+        &lt;/a>
+        &lt;ul class="nav-link-section">
+            &lt;li class="nav-link">Components&lt;/li>
+            &lt;li class="nav-link">Resources&lt;/li>
+            &lt;li class="nav-link">Examples&lt;/li>
+        &lt;/ul>
+    &lt;/header>
+            </code></pre>
+        </main>
+
+        <script src="/javascript/highlight.js"></script>
+        <script>
+            hljs.highlightAll();
+        </script>
+    </body>
+</html>
