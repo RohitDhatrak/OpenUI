@@ -25,21 +25,16 @@
                     />
                     <span class="brandname-title">Open UI</span>
                 </span>
-                <a
-                    href="https://github.com/RohitDhatrak/OpenUI"
-                    class="github-link"
-                >
-                    <button class="github-btn">GitHub</button>
-                </a>
             </a>
         </header>
         <nav class="site-nav">
-            <div class="nav-heading nav-getstarted">
-                <a href="/pages/getstarted.html">Getting Started</a>
+            <div class="nav-main-heading">Getting Started</div>
+
+            <div class="nav-sub-heading nav-getstarted">
+                <a href="/pages/usage.html">Usage</a>
             </div>
-            <div class="nav-heading nav-comp-heading">
-                <a href="/pages/components.html">Components</a>
-            </div>
+
+            <div class="nav-main-heading">Components</div>
             <ul class="nav-comp-section">
                 <li class="component-links">
                     <a href="/pages/components/Avatar/avatar.html">Avatar</a>
@@ -74,21 +69,6 @@
                         >Navigation</a
                     >
                 </li>
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Modal/modal.html">Modal</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Rating/rating.html">Rating</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Rating/rating.html">Slider</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Grid/grid.html">Grid</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Text/text.html">Text</a>
-                </li> -->
                 <li class="component-links">
                     <a href="/pages/components/Toast/toast.html">Toast</a>
                 </li>
@@ -96,13 +76,26 @@
         </nav>
         <main class="comp-disp">
             <h1 class="comp-disp-header">Image</h1>
+            <pre class="comp-code-container"><code class="html">
+            @import url("https://openui.netlify.app/pages/components/Image/image.css");
+            &lt;link rel="stylesheet" 
+            href="https://openui.netlify.app/pages/components/Image/image.css">
+            </code></pre>
+
             <h2 class="sub-comp-header">Responsive Image</h2>
 
-            <div class="comp-disp-container disp-flex">
+            <div
+                class="comp-disp-container disp-flex"
+                style="width: 30em, max-width: 50%;"
+            >
                 <img src="/images/dogs.jpg" alt="" class="img-res" />
             </div>
 
-            <p class="comp-desc">Component Description</p>
+            <p class="comp-desc">
+                Add the <span class="highlight">img-res</span> class to the
+                image tag. The image will grow to the 100% width of it's parent
+                container.
+            </p>
 
             <pre class="comp-code-container"><code class="html">
     &lt;img src="..." alt="" class="img-res" />
@@ -110,11 +103,15 @@
 
             <h2 class="sub-comp-header">Round Image</h2>
 
-            <div class="comp-disp-container disp-flex">
+            <div class="comp-disp-container disp-flex" style="width: 15em">
                 <img src="/images/puppy.jpg" alt="" class="img-round" />
             </div>
 
-            <p class="comp-desc">Component Description</p>
+            <p class="comp-desc">
+                Add the <span class="highlight">img-round</span> class to the
+                img tag to get a round image which will grow to 100% width of
+                it's parent container.
+            </p>
 
             <pre class="comp-code-container"><code class="html">
     &lt;img src="..." alt="" class="img-round" />

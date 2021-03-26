@@ -25,21 +25,16 @@
                     />
                     <span class="brandname-title">Open UI</span>
                 </span>
-                <a
-                    href="https://github.com/RohitDhatrak/OpenUI"
-                    class="github-link"
-                >
-                    <button class="github-btn">GitHub</button>
-                </a>
             </a>
         </header>
         <nav class="site-nav">
-            <div class="nav-heading nav-getstarted">
-                <a href="/pages/getstarted.html">Getting Started</a>
+            <div class="nav-main-heading">Getting Started</div>
+
+            <div class="nav-sub-heading nav-getstarted">
+                <a href="/pages/usage.html">Usage</a>
             </div>
-            <div class="nav-heading nav-comp-heading">
-                <a href="/pages/components.html">Components</a>
-            </div>
+
+            <div class="nav-main-heading">Components</div>
             <ul class="nav-comp-section">
                 <li class="component-links">
                     <a href="/pages/components/Avatar/avatar.html">Avatar</a>
@@ -74,21 +69,6 @@
                         >Navigation</a
                     >
                 </li>
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Modal/modal.html">Modal</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Rating/rating.html">Rating</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Rating/rating.html">Slider</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Grid/grid.html">Grid</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Text/text.html">Text</a>
-                </li> -->
                 <li class="component-links">
                     <a href="/pages/components/Toast/toast.html">Toast</a>
                 </li>
@@ -96,6 +76,13 @@
         </nav>
         <main class="comp-disp">
             <h1 class="comp-disp-header">Alert</h1>
+            <pre class="comp-code-container imp-link"><code class="html">
+            @import url("https://openui.netlify.app/pages/components/Alert/alert.css");
+            &lt;link rel="stylesheet" 
+            href="https://openui.netlify.app/pages/components/Alert/alert.css">
+            </code></pre>
+
+            <h2 class="sub-comp-header">Standard Alerts</h2>
             <div class="comp-disp-container">
                 <div class="alert alert-success">A simple success alert.</div>
                 <div class="alert alert-danger">A simple danger alert.</div>
@@ -103,20 +90,18 @@
                 <div class="alert alert-info">A simple info alert.</div>
             </div>
             <p class="comp-desc">
-                Add the <span class="highlight">alert</span> class to element.
-                Use the <span class="highlight">alert-success</span> class for a
-                success alert, <span class="highlight">alert-danger</span> tag
-                for a danger alert,
-                <span class="highlight">alert-warning</span> tag for a warning
-                alert and <span class="highlight">alert-info</span> class for an
-                info alert.
+                The alert component has four variants
+                <span class="highlight">alert-success</span>,
+                <span class="highlight">alert-danger</span>,
+                <span class="highlight">alert-warning</span> and
+                <span class="highlight">alert-info</span>
             </p>
 
             <pre class="comp-code-container"><code class="html">
-    &lt;div class="alert alert-success">...&lt;/div>
-    &lt;div class="alert alert-danger">...&lt;/div>
-    &lt;div class="alert alert-warning">...&lt;/div>
-    &lt;div class="alert alert-info">...&lt;/div>
+    &lt;div class="alert alert-success">A simple success alert.&lt;/div>
+    &lt;div class="alert alert-danger">A simple danger alert.&lt;/div>
+    &lt;div class="alert alert-warning">A simple warning alert.&lt;/div>
+    &lt;div class="alert alert-info">A simple info alert.&lt;/div>
             </code></pre>
         </main>
 

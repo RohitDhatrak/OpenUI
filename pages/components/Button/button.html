@@ -25,21 +25,16 @@
                     />
                     <span class="brandname-title">Open UI</span>
                 </span>
-                <a
-                    href="https://github.com/RohitDhatrak/OpenUI"
-                    class="github-link"
-                >
-                    <button class="github-btn">GitHub</button>
-                </a>
             </a>
         </header>
         <nav class="site-nav">
-            <div class="nav-heading nav-getstarted">
-                <a href="/pages/getstarted.html">Getting Started</a>
+            <div class="nav-main-heading">Getting Started</div>
+
+            <div class="nav-sub-heading nav-getstarted">
+                <a href="/pages/usage.html">Usage</a>
             </div>
-            <div class="nav-heading nav-comp-heading">
-                <a href="/pages/components.html">Components</a>
-            </div>
+
+            <div class="nav-main-heading">Components</div>
             <ul class="nav-comp-section">
                 <li class="component-links">
                     <a href="/pages/components/Avatar/avatar.html">Avatar</a>
@@ -74,21 +69,6 @@
                         >Navigation</a
                     >
                 </li>
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Modal/modal.html">Modal</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Rating/rating.html">Rating</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Rating/rating.html">Slider</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Grid/grid.html">Grid</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Text/text.html">Text</a>
-                </li> -->
                 <li class="component-links">
                     <a href="/pages/components/Toast/toast.html">Toast</a>
                 </li>
@@ -96,18 +76,31 @@
         </nav>
         <main class="comp-disp">
             <h1 class="comp-disp-header">Button</h1>
+            <pre class="comp-code-container"><code class="html">
+            @import url("https://openui.netlify.app/pages/components/Button/button.css");
+            &lt;link rel="stylesheet" 
+            href="https://openui.netlify.app/pages/components/Button/button.css">
+            </code></pre>
+
             <h2 class="sub-comp-header">Solid Buttons</h2>
 
             <div class="comp-disp-container disp-flex flx-wrap">
                 <button class="btn btn-primary">Primary</button>
                 <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-danger">Danger</button>
             </div>
 
-            <p class="comp-desc">Component Description</p>
+            <p class="comp-desc">
+                The solid button component is available in three variants
+                <span class="highlight">btn-primary</span>,
+                <span class="highlight">btn-secondary</span> and
+                <span class="highlight">btn-danger</span>.
+            </p>
 
             <pre class="comp-code-container"><code class="html">
-    &lt;button class="btn btn-primary">...&lt;/button>
-    &lt;button class="btn btn-secondary">...&lt;/button>
+    &lt;button class="btn btn-primary">Primary&lt;/button>
+    &lt;button class="btn btn-secondary">Secondary&lt;/button>
+    &lt;button class="btn btn-danger">Danger&lt;/button>
             </code></pre>
 
             <h2 class="sub-comp-header">Outline Buttons</h2>
@@ -115,38 +108,48 @@
             <div class="comp-disp-container disp-flex flx-wrap">
                 <button class="btn btn-outline-primary">Primary</button>
                 <button class="btn btn-outline-secondary">Secondary</button>
+                <button class="btn btn-outline-danger">Danger</button>
             </div>
 
-            <p class="comp-desc">Component Description</p>
+            <p class="comp-desc">
+                The button component is available in three variants
+                <span class="highlight">btn-outline-primary</span>,
+                <span class="highlight">btn-outline-secondary</span> and
+                <span class="highlight">btn-outline-danger</span>.
+            </p>
 
             <pre class="comp-code-container"><code class="html">
-    &lt;button class="btn btn-outline-primary">...&lt;/button>
-    &lt;button class="btn btn-outline-secondary">...&lt;/button>
+    &lt;button class="btn btn-outline-primary">Primary&lt;/button>
+    &lt;button class="btn btn-outline-secondary">Secondary&lt;/button>
+    &lt;button class="btn btn-outline-danger">Danger&lt;/button>
             </code></pre>
 
             <h2 class="sub-comp-header">Icon Buttons</h2>
 
             <div class="comp-disp-container disp-flex flx-wrap">
-                <button class="btn btn-primary btn-icon">
+                <button class="btn btn-icon btn-primary">
                     <img src="/images/cart-white.svg" alt="" />
                     <span>Add to cart</span>
                 </button>
 
-                <button class="btn btn-icon btn-delete">
+                <button class="btn btn-icon btn-danger">
                     <img src="/images/delete.svg" alt="" />
                     <span>Delete</span>
                 </button>
             </div>
 
-            <p class="comp-desc">Component Description</p>
+            <p class="comp-desc">
+                Add the <span class="highlight">btn-icon</span> class to the
+                button element and a img tag with the link to the icon.
+            </p>
 
             <pre class="comp-code-container"><code class="html">
-    &lt;button class="btn btn-primary btn-icon">
+    &lt;button class="btn btn-icon btn-primary">
         &lt;img src="..." alt=""/>
         &lt;span>Add to cart&lt;/span>
     &lt;/button>
 
-    &lt;button class="btn btn-icon btn-delete">
+    &lt;button class="btn btn-icon btn-danger">
         &lt;img src="..." alt=""/>
         &lt;span>Delete&lt;/span>
     &lt;/button>

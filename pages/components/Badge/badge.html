@@ -26,21 +26,16 @@
                     />
                     <span class="brandname-title">Open UI</span>
                 </span>
-                <a
-                    href="https://github.com/RohitDhatrak/OpenUI"
-                    class="github-link"
-                >
-                    <button class="github-btn">GitHub</button>
-                </a>
             </a>
         </header>
         <nav class="site-nav">
-            <div class="nav-heading nav-getstarted">
-                <a href="/pages/getstarted.html">Getting Started</a>
+            <div class="nav-main-heading">Getting Started</div>
+
+            <div class="nav-sub-heading nav-getstarted">
+                <a href="/pages/usage.html">Usage</a>
             </div>
-            <div class="nav-heading nav-comp-heading">
-                <a href="/pages/components.html">Components</a>
-            </div>
+
+            <div class="nav-main-heading">Components</div>
             <ul class="nav-comp-section">
                 <li class="component-links">
                     <a href="/pages/components/Avatar/avatar.html">Avatar</a>
@@ -75,21 +70,6 @@
                         >Navigation</a
                     >
                 </li>
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Modal/modal.html">Modal</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Rating/rating.html">Rating</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Rating/rating.html">Slider</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Grid/grid.html">Grid</a>
-                </li> -->
-                <!-- <li class="component-links">
-                    <a href="/pages/components/Text/text.html">Text</a>
-                </li> -->
                 <li class="component-links">
                     <a href="/pages/components/Toast/toast.html">Toast</a>
                 </li>
@@ -97,6 +77,12 @@
         </nav>
         <main class="comp-disp">
             <h1 class="comp-disp-header">Badge</h1>
+            <pre class="comp-code-container"><code class="html">
+            @import url("https://openui.netlify.app/pages/components/Badge/badge.css");
+            &lt;link rel="stylesheet" 
+            href="https://openui.netlify.app/pages/components/Badge/badge.css">
+            </code></pre>
+
             <h2 class="sub-comp-header">Avatars with Badge</h2>
 
             <div class="comp-disp-container disp-flex">
@@ -114,7 +100,7 @@
                         alt="avatar demo"
                         height="3em"
                     />
-                    <div class="badge-count">8</div>
+                    <div class="badge-count"></div>
                 </figure>
                 <figure class="avatar avatar-std badge disp-inline">
                     <img
@@ -127,10 +113,8 @@
             </div>
 
             <p class="comp-desc">
-                Add a div in the Avatar component with a class
-                <span class="highlight">badge-count</span>. Check out the
-                <a class="highlight" href="">Avatar</a>
-                component for instrucions on how to use it.
+                The badge component can be used in two ways with and without the
+                count.
             </p>
 
             <pre class="comp-code-container"><code class="html">
@@ -158,10 +142,7 @@
                 </figure>
             </div>
             <p class="comp-desc">
-                Add the <span class="highlight">badge</span> class to a non self
-                closing element. Add the icon in the img tag. Add a div having a
-                class <span class="highlight">badge-count</span> with the
-                content that should be shown in the badge.
+                The badge component can be used with and without the badge count
             </p>
 
             <pre class="comp-code-container"><code class="html">
