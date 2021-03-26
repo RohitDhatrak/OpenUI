@@ -1,0 +1,45 @@
+.list {
+    border: 1px solid #e6e6e9;
+    padding-left: 0;
+    padding: 1em;
+    border-radius: 0.5em;
+    width: 17em;
+}
+
+.list-heading {
+}
+
+.list-heading > span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.05em;
+}
+
+.list-heading > img {
+    height: max-content;
+    float: right;
+}
+
+.list > li {
+    font-size: 0.95rem;
+    list-style: none;
+    margin: 1em;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+.list > li:hover {
+    color: #02705c;
+}
+
+.list > label > input {
+    margin-right: 1em;
+}
+
+.list > label {
+    display: block;
+    font-size: 0.95rem;
+    list-style: none;
+    margin: 1em;
+    margin-left: 0em;
+}
