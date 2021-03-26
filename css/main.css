@@ -59,3 +59,21 @@
     background-color: transparent;
     color: #000;
 }
+
+@media (max-width: 480px) {
+    .docs-link {
+        display: none;
+    }
+}
+
+@media (max-width: 410px) {
+    .button-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-start {
+        margin-bottom: 1em;
+    }
+}
