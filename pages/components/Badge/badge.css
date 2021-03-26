@@ -8,14 +8,19 @@
     color: #fff;
     border-radius: 50%;
     top: 0;
-    right: 0;
+    right: 0.4em;
     font-size: 60%;
     font-style: var(--font);
-    width: 35%;
-    height: 30%;
-    min-width: 15px;
-    min-height: 15px;
+    width: 25%;
+    height: 21%;
+    font-weight: 600;
+    min-width: 13px;
+    min-height: 13px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.avatar-std > .badge-count {
+    right: -0.2em;
 }
