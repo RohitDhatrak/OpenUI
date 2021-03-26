@@ -1,0 +1,46 @@
+.inp {
+    position: relative;
+    margin: 0.5em;
+}
+
+.inp > input {
+    border-radius: 0.3em;
+    border: 2px solid #9b9ba0;
+    width: 20em;
+    height: 3em;
+    padding: 0.2em;
+}
+
+.inp > div {
+    position: absolute;
+    top: -0.6em;
+    font-size: 0.88rem;
+    left: 1em;
+    background-color: #fff;
+    font-weight: 500;
+    padding: 0.1em;
+}
+
+.inp > input.error {
+    border: 2px solid #e63030;
+}
+
+.inp > div.error {
+    color: #dc2626;
+}
+
+.inp > input.warn {
+    border: 2px solid #ffae22;
+}
+
+.inp > div.warn {
+    color: #db9b2c;
+}
+
+.inp > input.success {
+    border: 2px solid #059669;
+}
+
+.inp > div.success {
+    color: #047857;
+}

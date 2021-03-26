@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Input</title>
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/comp-page.css" />
+        <link rel="stylesheet" href="/css/components.css" />
+        <link rel="stylesheet" href="/pages/components/Input/input.css" />
+        <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
+        <link rel="stylesheet" href="/css/night-owl.css" />
+    </head>
+    <body>
+        <header class="header">
+            <a class="brandname-link" href="/index.html">
+                <span class="brandname">
+                    <img
+                        class="brandname-logo"
+                        src="/images/logo.png"
+                        width="2em"
+                        alt=""
+                    />
+                    <span class="brandname-title">Open UI</span>
+                </span>
+            </a>
+        </header>
+        <nav class="site-nav">
+            <div class="nav-main-heading">Getting Started</div>
+
+            <div class="nav-sub-heading nav-getstarted">
+                <a href="/pages/usage.html">Usage</a>
+            </div>
+
+            <div class="nav-main-heading">Components</div>
+            <ul class="nav-comp-section">
+                <li class="component-links">
+                    <a href="/pages/components/Avatar/avatar.html">Avatar</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Alert/alert.html">Alert</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Badge/badge.html">Badge</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Button/button.html">Button</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Card/card.html">Card</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Image/image.html">Image</a>
+                </li>
+                <li class="component-links">
+                    <a
+                        style="color: #027a64"
+                        href="/pages/components/Input/input.html"
+                        >Input</a
+                    >
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Lists/lists.html">List</a>
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Navigation/navigation.html"
+                        >Navigation</a
+                    >
+                </li>
+                <li class="component-links">
+                    <a href="/pages/components/Toast/toast.html">Toast</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="comp-disp">
+            <h1 class="comp-disp-header">Input</h1>
+            <pre class="comp-code-container"><code class="html">
+            @import url("https://openui.netlify.app/pages/components/Input/input.css");
+            &lt;link rel="stylesheet" 
+            href="https://openui.netlify.app/pages/components/Input/input.css">
+            </code></pre>
+
+            <h2 class="sub-comp-header">Standard Input</h2>
+
+            <div class="comp-disp-container disp-flex">
+                <div class="inp">
+                    <input type="text" />
+                    <div>Label</div>
+                </div>
+            </div>
+
+            <pre class="comp-code-container"><code class="html">
+    &lt;div class="inp">
+        &lt;input type="text"/>
+        &lt;div>Label&lt;/div>
+    &lt;/div>
+            </code></pre>
+
+            <h2 class="sub-comp-header">Validation</h2>
+
+            <div class="comp-disp-container disp-flex flx-wrap">
+                <div class="inp">
+                    <input type="text" class="error" />
+                    <div class="error">Label</div>
+                </div>
+
+                <div class="inp">
+                    <input type="text" class="warn" />
+                    <div class="warn">Label</div>
+                </div>
+
+                <div class="inp">
+                    <input type="text" class="success" />
+                    <div class="success">Label</div>
+                </div>
+            </div>
+
+            <p class="comp-desc">
+                There are 3 types of inputs available apart from the default one
+                <span class="highlight">error</span>,
+                <span class="highlight">warn</span> and
+                <span class="highlight">success</span>.
+            </p>
+
+            <pre class="comp-code-container"><code class="html">
+    &lt;div class="inp">
+        &lt;input type="text" class="error" />
+        &lt;div class="error">Label&lt;/div>
+    &lt;/div>
+
+    &lt;div class="inp">
+        &lt;input type="text" class="warn" />
+        &lt;div class="warn">Label&lt;/div>
+    &lt;/div>
+
+    &lt;div class="inp">
+        &lt;input type="text" class="success" />
+        &lt;div class="success">Label&lt;/div>
+    &lt;/div>
+            </code></pre>
+        </main>
+
+        <script src="/javascript/highlight.js"></script>
+        <script>
+            hljs.highlightAll();
+        </script>
+    </body>
+</html>
