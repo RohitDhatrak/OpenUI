@@ -5,19 +5,20 @@
     border-radius: 0.5em;
     position: relative;
     margin: 0.1em;
+    cursor: pointer;
 }
 
 .card:hover {
     box-shadow: 0px 0px 20px 0px #e3dddd, 20px -17px 60px #ffffff;
 }
 
-.card > .cover {
+.card-cover {
     width: 11em;
     border-radius: 0.5em;
     margin-bottom: 0.5em;
 }
 
-.card > .icon {
+.card-icon {
     position: absolute;
     top: 1.4em;
     right: 1.35em;
@@ -27,35 +28,35 @@
     opacity: 0.85;
 }
 
-.card > .icon:hover {
+.card-icon:hover {
     opacity: 1;
 }
 
-.card > .icon > img {
+.card-icon > img {
     width: 1em;
     font-weight: 500;
 }
 
-.card > .text {
+.card-text {
     width: 11em;
 }
 
-.card > .text > .heading {
+.card-heading {
     font-weight: 500;
 }
 
-.card > .text > .sub-heading {
+.card-sub-heading {
     font-size: 0.8rem;
 }
 
-.card > .text > .price {
+.card-price {
     margin-top: 0.5em;
 }
 
-.card > .text > .price > .price-discounted {
+.price-discounted {
 }
 
-.card > .text > .price > .price-original {
+.price-original {
     text-decoration: line-through;
     color: #9b9ba0;
     margin-left: 0.3em;
@@ -67,15 +68,15 @@
     width: 90%;
 }
 
-.card-hz > .icon {
+.card-hz .card-icon {
     opacity: 0.6;
 }
 
-.card-hz > .icon:hover {
+.card-hz .card-icon:hover {
     opacity: 1;
 }
 
-.card-hz > .text {
+.card-hz .card-text {
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -83,26 +84,54 @@
     margin: 1em;
 }
 
-.card-hz > .text > .heading {
+.card-hz .card-heading {
     font-size: 1.4rem;
 }
 
-.card-hz > .text > .sub-heading {
+.card-hz .card-sub-heading {
     font-size: 0.9rem;
 }
 
-.card-hz > .text > .para {
+.card-hz .card-para {
     margin-top: 1em;
 }
 
-.card-hz > .text > .price {
-    margin-top: 0.5em;
-}
-
-.card-hz > .text > .price > .price-discounted {
+.card-hz .price-discounted {
     font-size: 1.3rem;
 }
 
-.card-hz > .text > .price > .price-original {
+.card-hz .price-original {
     font-size: 0.9rem;
+}
+
+@media (max-width: 720px) {
+    .card-hz {
+        flex-direction: column;
+        width: max-content;
+    }
+
+    .card-hz .card-text {
+        width: 11em;
+        margin: 0em;
+    }
+
+    .card-hz .card-heading {
+        font-size: 1rem;
+    }
+
+    .card-hz .card-sub-heading {
+        font-size: 0.8rem;
+    }
+
+    .card-para {
+        display: none;
+    }
+
+    .card-hz .price-discounted {
+        font-size: 1rem;
+    }
+
+    .card-hz .price-original {
+        font-size: 0.8rem;
+    }
 }
