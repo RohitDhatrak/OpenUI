@@ -6,6 +6,7 @@
     margin: 0.1em;
     background-color: var(--primary-colour);
     border-radius: 0.5em;
+    cursor: pointer;
 }
 
 .btn-primary {

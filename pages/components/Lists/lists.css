@@ -18,6 +18,7 @@
 .list-heading > img {
     height: max-content;
     float: right;
+    cursor: pointer;
 }
 
 .list > li {
