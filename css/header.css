@@ -6,7 +6,8 @@
 }
 
 .header {
-    padding-top: 1.8em;
+    padding: 1em 0;
+    padding-bottom: 0.7em;
     position: fixed;
     top: 0;
     width: 100vw;
