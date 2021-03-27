@@ -7,7 +7,7 @@
         <title>Card</title>
         <link rel="stylesheet" href="/css/header.css" />
         <link rel="stylesheet" href="/css/comp-page.css" />
-        <link rel="stylesheet" href="/css/components.css" />
+        <link rel="stylesheet" href="/css/utilities.css" />
         <link rel="stylesheet" href="/pages/components/Card/card.css" />
         <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/images/logo.png" />
@@ -86,16 +86,20 @@
 
             <div class="comp-disp-container disp-flex flx-wrap">
                 <div class="card">
-                    <img src="/images/hp-book-cover.jpg" alt="" class="cover" />
-                    <div class="icon">
+                    <img
+                        src="/images/hp-book-cover.jpg"
+                        alt=""
+                        class="card-cover"
+                    />
+                    <div class="card-icon">
                         <img src="/images/heart.svg" alt="" />
                     </div>
-                    <div class="text">
-                        <div class="heading">
+                    <div class="card-text">
+                        <div class="card-heading">
                             Harry Potter and the Sorcerer's Stone
                         </div>
-                        <div class="sub-heading">by J.K Rowling</div>
-                        <div class="price">
+                        <div class="card-sub-heading">by J.K Rowling</div>
+                        <div class="card-price">
                             <span class="price-discounted">₹237</span>
                             <span class="price-original">₹499</span>
                         </div>
@@ -103,23 +107,27 @@
                 </div>
 
                 <div class="card card-hz">
-                    <img src="/images/hp-book-cover.jpg" alt="" class="cover" />
-                    <div class="icon">
+                    <img
+                        src="/images/hp-book-cover.jpg"
+                        alt=""
+                        class="card-cover"
+                    />
+                    <div class="card-icon">
                         <img src="/images/heart.svg" alt="" />
                     </div>
-                    <div class="text">
-                        <div class="heading">
+                    <div class="card-text">
+                        <div class="card-heading">
                             Harry Potter and the Sorcerer's Stone
                         </div>
-                        <div class="sub-heading">by J.K Rowling</div>
-                        <div class="para">
+                        <div class="card-sub-heading">by J.K Rowling</div>
+                        <div class="card-para">
                             Harry Potter's life is miserable. His parents are
                             dead and he's stuck with his heartless relatives,
                             who force him to live in a tiny closet under the
                             stairs. But his fortune changes when he receives a
                             letter...
                         </div>
-                        <div class="price">
+                        <div class="card-price">
                             <span class="price-discounted">₹237</span>
                             <span class="price-original">₹499</span>
                         </div>
@@ -132,14 +140,14 @@
             <pre class="comp-code-container"><code class="html">
     &lt;div class="card">
         &lt;img src="..." alt="" class="cover" />
-        &lt;div class="icon">
+        &lt;div class="card-icon">
             &lt;img src="..." alt="" />
         &lt;/div>
-        &lt;div class="text">
-            &lt;div class="heading">Harry Potter and the Sorcerer's Stone&lt;/div>
-            &lt;div class="sub-heading">by J.K Rowling&lt;/div>
-            &lt;div class="para">Harry Potter's life is...&lt;/div>
-            &lt;div class="price">
+        &lt;div class="card-text">
+            &lt;div class="card-heading">Harry Potter and the Sorcerer's Stone&lt;/div>
+            &lt;div class="card-sub-heading">by J.K Rowling&lt;/div>
+            &lt;div class="card-para">Harry Potter's life is...&lt;/div>
+            &lt;div class="card-price">
                 &lt;span class="price">₹237&lt;/span>
                 &lt;span class="price-original">₹499&lt;/span>
             &lt;/div>
