@@ -4,11 +4,14 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Avatar</title>
+        <title>Navigation</title>
         <link rel="stylesheet" href="/css/header.css" />
         <link rel="stylesheet" href="/css/comp-page.css" />
         <link rel="stylesheet" href="/css/utilities.css" />
-        <link rel="stylesheet" href="/pages/components/Alert/alert.css" />
+        <link
+            rel="stylesheet"
+            href="/pages/components/Navigation/navigation.css"
+        />
         <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/images/logo.png" />
         <link rel="stylesheet" href="/css/night-owl.css" />
@@ -40,11 +43,7 @@
                     <a href="/pages/components/Avatar/avatar.html">Avatar</a>
                 </li>
                 <li class="component-links">
-                    <a
-                        style="color: #027a64"
-                        href="/pages/components/Alert/alert.html"
-                        >Alert</a
-                    >
+                    <a href="/pages/components/Alert/alert.html">Alert</a>
                 </li>
                 <li class="component-links">
                     <a href="/pages/components/Badge/badge.html">Badge</a>
@@ -65,7 +64,9 @@
                     <a href="/pages/components/Lists/lists.html">List</a>
                 </li>
                 <li class="component-links">
-                    <a href="/pages/components/Navigation/navigation.html"
+                    <a
+                        style="color: #027a64"
+                        href="/pages/components/Navigation/navigation.html"
                         >Navigation</a
                     >
                 </li>
@@ -75,47 +76,64 @@
             </ul>
         </nav>
         <main class="comp-disp">
-            <h1 class="comp-disp-header">Alert</h1>
-            <pre class="comp-code-container imp-link"><code class="html">
-    @import url("https://openui.netlify.app/pages/components/Alert/alert.css");
+            <h1 class="comp-disp-header">Navigation</h1>
+            <pre class="comp-code-container"><code class="html">
+    @import url("https://openui.netlify.app/pages/components/Navigation/navigation.css");
     &lt;link rel="stylesheet" 
-    href="https://openui.netlify.app/pages/components/Alert/alert.css">
+    href="https://openui.netlify.app/pages/components/Navigation/navigation.css">
             </code></pre>
 
-            <h2 class="sub-comp-header">Standard Alerts</h2>
-            <div class="comp-disp-container">
-                <div class="alert alert-success">A simple success alert.</div>
-                <div class="alert alert-danger">A simple danger alert.</div>
-                <div class="alert alert-warning">A simple warning alert.</div>
-                <div class="alert alert-info">A simple info alert.</div>
+            <h2 class="sub-comp-header">Desktop Navigation</h2>
+
+            <div class="comp-disp-container disp-flex">
+                <header class="nav">
+                    <a class="nav-brand-link" href="">
+                        <span>
+                            <img
+                                class="nav-brand-logo"
+                                src="/images/logo.png"
+                                width="2em"
+                                alt=""
+                            />
+                            <span class="nav-brand-name">Open UI</span>
+                        </span>
+                    </a>
+                    <ul class="nav-link-section">
+                        <li class="nav-link">Components</li>
+                        <li class="nav-link">Resources</li>
+                        <li class="nav-link">Examples</li>
+                    </ul>
+                </header>
             </div>
-            <p class="comp-desc">
-                The alert component has four variants
-                <span class="highlight">alert-success</span>,
-                <span class="highlight">alert-danger</span>,
-                <span class="highlight">alert-warning</span> and
-                <span class="highlight">alert-info</span>
-            </p>
 
             <pre class="comp-code-container"><code class="html">
-    &lt;div class="alert alert-success">A simple success alert.&lt;/div>
-    &lt;div class="alert alert-danger">A simple danger alert.&lt;/div>
-    &lt;div class="alert alert-warning">A simple warning alert.&lt;/div>
-    &lt;div class="alert alert-info">A simple info alert.&lt;/div>
+    &lt;header class="nav">
+        &lt;a class="nav-brand-link" href="">
+            &lt;span>
+                &lt;img class="nav-brand-logo" src="..." alt=""/>
+                &lt;span class="nav-brand-name">Open UI&lt;/span>
+            &lt;/span>
+        &lt;/a>
+        &lt;ul class="nav-link-section">
+            &lt;li class="nav-link">Components&lt;/li>
+            &lt;li class="nav-link">Resources&lt;/li>
+            &lt;li class="nav-link">Examples&lt;/li>
+        &lt;/ul>
+    &lt;/header>
             </code></pre>
 
             <footer class="page-footer">
                 <a
-                    href="/pages/components/Avatar/avatar.html"
+                    href="/pages/components/Lists/lists.html"
                     class="footer-button"
                 >
-                    <img src="/images/arrow_back.svg" alt="" />Avatar
+                    <img src="/images/arrow_back.svg" alt="" />List
                 </a>
                 <a
-                    href="/pages/components/Badge/badge.html"
+                    href="/pages/components/Toast/toast.html"
                     class="footer-button"
                 >
-                    Badge
+                    Toast
                     <img src="/images/arrow_forward.svg" alt="" />
                 </a>
             </footer>

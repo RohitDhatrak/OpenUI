@@ -1,0 +1,10 @@
+.img-res {
+    width: 100%;
+    height: auto;
+}
+
+.img-round {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}

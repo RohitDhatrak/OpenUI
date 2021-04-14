@@ -1,10 +1,15 @@
 .avatar {
     margin: 0.5em;
     position: relative;
+    display: inline;
 }
 
 .avatar > img {
     border-radius: 50%;
+    height: 2em;
+}
+
+.avatar-std > img {
     height: 2em;
 }
 
@@ -24,6 +29,10 @@
     height: 1em;
 }
 
+.avatar-square > img {
+    border-radius: 25%;
+}
+
 .avatar-presence {
     border: 2px solid #fff;
     background-color: #bcc3ce;
@@ -35,6 +44,11 @@
 }
 
 .avatar > .avatar-presence {
+    bottom: 0.2em;
+    right: 0.1em;
+}
+
+.avatar-std > .avatar-presence {
     bottom: 0.2em;
     right: 0.1em;
 }
@@ -61,10 +75,14 @@
     right: 0.05em;
 }
 
-.avatar > .dnd {
+.avatar-presence.offline {
+    background-color: #bcc3ce;
+}
+
+.avatar-presence.dnd {
     background-color: #ff0000;
 }
 
-.avatar > .online {
+.avatar-presence.online {
     background-color: #32b643;
 }

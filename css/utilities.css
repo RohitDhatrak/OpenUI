@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-spc-btw {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 20px 0px #e3dddd, 20px -17px 60px #ffffff;
+}
+
+.w-1 {
+    width: 1em;
+}
+
+.w-2 {
+    width: 2em;
+}

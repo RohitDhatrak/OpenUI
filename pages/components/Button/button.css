@@ -1,0 +1,92 @@
+.btn {
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5em 1em;
+    margin: 0.1em;
+    background-color: var(--primary-colour);
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--primary-colour);
+    color: var(--primary-font-colour);
+    opacity: 0.95;
+}
+
+.btn-primary:hover {
+    opacity: 1;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-colour);
+    color: var(--secondary-font-colour);
+    opacity: 0.95;
+}
+
+.btn-secondary:hover {
+    opacity: 1;
+}
+
+.btn-danger {
+    background-color: #ef4444;
+    color: #fff;
+    opacity: 0.95;
+}
+
+.btn-danger:hover {
+    opacity: 1;
+}
+
+.btn-outline-primary {
+    color: var(--primary-colour);
+    border: solid 1px var(--primary-colour);
+    background-color: transparent;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus-visible {
+    background-color: var(--primary-colour);
+    color: var(--primary-font-colour);
+}
+
+.btn-outline-secondary {
+    color: var(--secondary--colour);
+    border: solid 1px var(--secondary-colour);
+    background-color: transparent;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus-visible {
+    background-color: var(--secondary-colour);
+    color: var(--secondary-font-colour);
+}
+
+.btn-outline-danger {
+    color: #ef4444;
+    border: solid 1px #ef4444;
+    background-color: transparent;
+}
+
+.btn-outline-danger:hover,
+.btn-outline-danger:focus-visible {
+    background-color: #ef4444;
+    color: #fff;
+}
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-icon > img {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.btn-icon > span {
+    font-weight: 500;
+    margin-left: 0.4em;
+}

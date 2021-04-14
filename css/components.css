@@ -1,15 +1,11 @@
-* {
-    box-sizing: border-box;
-}
-
-.disp-block {
-    display: block;
-}
-
-.disp-inline {
-    display: inline;
-}
-
-.disp-flex {
-    display: flex;
-}
+@import url("/pages/components/Avatar/avatar.css");
+@import url("/pages/components/Alert/alert.css");
+@import url("/pages/components/Badge/badge.css");
+@import url("/pages/components/Button/button.css");
+@import url("/pages/components/Card/card.css");
+@import url("/pages/components/Image/image.css");
+@import url("/pages/components/Input/input.css");
+@import url("/pages/components/Lists/lists.css");
+@import url("/pages/components/Navigation/navigation.css");
+@import url("/pages/components/Toast/toast.css");
+@import url("/css/utilities.css");

@@ -4,14 +4,15 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Avatar</title>
+        <title>Badge</title>
         <link rel="stylesheet" href="/css/header.css" />
         <link rel="stylesheet" href="/css/comp-page.css" />
         <link rel="stylesheet" href="/css/utilities.css" />
+        <link rel="stylesheet" href="/pages/components/Badge/badge.css" />
         <link rel="stylesheet" href="/pages/components/Avatar/avatar.css" />
         <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/images/logo.png" />
-        <link rel="stylesheet" href="/css/night-owl.css">
+        <link rel="stylesheet" href="/css/night-owl.css" />
     </head>
     <body>
         <header class="header">
@@ -37,17 +38,17 @@
             <div class="nav-main-heading">Components</div>
             <ul class="nav-comp-section">
                 <li class="component-links">
-                    <a
-                        style="color: #027a64"
-                        href="/pages/components/Avatar/avatar.html"
-                        >Avatar</a
-                    >
+                    <a href="/pages/components/Avatar/avatar.html">Avatar</a>
                 </li>
                 <li class="component-links">
                     <a href="/pages/components/Alert/alert.html">Alert</a>
                 </li>
                 <li class="component-links">
-                    <a href="/pages/components/Badge/badge.html">Badge</a>
+                    <a
+                        style="color: #027a64"
+                        href="/pages/components/Badge/badge.html"
+                        >Badge</a
+                    >
                 </li>
                 <li class="component-links">
                     <a href="/pages/components/Button/button.html">Button</a>
@@ -75,114 +76,99 @@
             </ul>
         </nav>
         <main class="comp-disp">
-            <h1 class="comp-disp-header">Avatar</h1>
+            <h1 class="comp-disp-header">Badge</h1>
             <pre class="comp-code-container"><code class="html">
-    @import url("https://openui.netlify.app/pages/components/Avatar/avatar.css");
+    @import url("https://openui.netlify.app/pages/components/Badge/badge.css");
     &lt;link rel="stylesheet" 
-    href="https://openui.netlify.app/pages/components/Avatar/avatar.css">
+    href="https://openui.netlify.app/pages/components/Badge/badge.css">
             </code></pre>
 
-            <h2 class="sub-comp-header">Standard Avatars</h2>
+            <h2 class="sub-comp-header">Avatars with Badge</h2>
+
             <div class="comp-disp-container disp-flex">
-                <figure class="avatar avatar-xl disp-inline">
+                <figure class="avatar avatar-xl badge disp-inline">
                     <img
                         src="https://picturepan2.github.io/spectre/img/avatar-2.png"
                         alt="avatar demo"
                         height="4em"
                     />
+                    <div class="badge-count">99</div>
                 </figure>
-                <figure class="avatar avatar-lg disp-inline">
+                <figure class="avatar avatar-lg badge disp-inline">
                     <img
                         src="https://picturepan2.github.io/spectre/img/avatar-3.png"
                         alt="avatar demo"
                         height="3em"
                     />
+                    <div class="badge-count"></div>
                 </figure>
-                <figure class="avatar avatar-std disp-inline">
+                <figure class="avatar avatar-std badge disp-inline">
                     <img
                         src="https://picturepan2.github.io/spectre/img/avatar-1.png"
                         alt="avatar demo"
                         height="2em"
                     />
-                </figure>
-                <figure class="avatar avatar-sm disp-inline">
-                    <img
-                        src="https://picturepan2.github.io/spectre/img/avatar-4.png"
-                        alt="avatar demo"
-                        height="1.5em"
-                    />
-                </figure>
-                <figure class="avatar avatar-xs disp-inline">
-                    <img
-                        src="https://picturepan2.github.io/spectre/img/avatar-5.png"
-                        alt="avatar demo"
-                        height="1em"
-                    />
+                    <div class="badge-count">8</div>
                 </figure>
             </div>
 
             <p class="comp-desc">
-                The avatar component has 5 sizes, <span class="highlight">avatar-xl</span> (4em), <span class="highlight">avatar-lg</span> (3em), <span class="highlight">avatar-std</span> (2em) <span class="highlight">avatar-sm</span> (1.5em), and <span class="highlight">avatar-xs</span> (1em).
+                The badge component can be used in two ways with and without the
+                count.
             </p>
 
             <pre class="comp-code-container"><code class="html">
-    &lt;figure class="avatar avatar-xl">
-        &lt;img src="..." alt="..."/>
+    &lt;figure class="avatar avatar-xl badge">
+        &lt;img src="..." alt=""/>
+        &lt;div class="badge-count">8&lt;/div>
     &lt;/figure>
-
-    &lt;figure class="avatar avatar-std">
-        &lt;img src="..." alt="..."/>
+    
+    &lt;figure class="avatar avatar-std badge">
+        &lt;img src="..." alt=""/>
+        &lt;div class="badge-count">8&lt;/div>
     &lt;/figure>
             </code></pre>
-            
-            <h2 class="sub-comp-header">Avatars with status</h2>
+
+            <h2 class="sub-comp-header">Icons with Badge</h2>
+
             <div class="comp-disp-container disp-flex">
-                <figure class="avatar avatar-xl disp-inline">
-                    <img
-                        src="https://picturepan2.github.io/spectre/img/avatar-2.png"
-                        alt="avatar demo"
-                        height="4em"
-                    />
-                    <div class="avatar-presence dnd"></div>
+                <figure class="badge">
+                    <img src="/images/cart.svg" alt="" />
+                    <div class="badge-count">8</div>
                 </figure>
-                <figure class="avatar avatar-lg disp-inline">
-                    <img
-                        src="https://picturepan2.github.io/spectre/img/avatar-3.png"
-                        alt="avatar demo"
-                        height="3em"
-                    />
-                    <div class="avatar-presence offline"></div>
-                </figure>
-                <figure class="avatar avatar-std disp-inline">
-                    <img
-                        src="https://picturepan2.github.io/spectre/img/avatar-1.png"
-                        alt="avatar demo"
-                        height="2em"
-                    />
-                    <div class="avatar-presence online"></div>
+                <figure class="badge">
+                    <img src="/images/mail.svg" alt="" />
+                    <div class="badge-count">8</div>
                 </figure>
             </div>
-
-            <p class="comp-desc">Avatars support presence indicators. There are three indicators <span class="highlight">online</span>, <span class="highlight">offline</span> and <span class="highlight">dnd</span>.</p>
+            <p class="comp-desc">
+                The badge component can be used with and without the badge count
+            </p>
 
             <pre class="comp-code-container"><code class="html">
-    &lt;figure class="avatar avatar-xl">
-        &lt;img src="..." alt="..."/>
-        &lt;div class="avatar-presence dnd"></div>
+    &lt;figure class="badge">
+        &lt;img src="..." alt="" />
+        &lt;div class="badge-count">8&lt;/div>
     &lt;/figure>
 
-    &lt;figure class="avatar avatar-lg">
-        &lt;img src="..." alt="..."/>
-        &lt;div class="avatar-presence offline"></div>
+    &lt;figure class="badge">
+        &lt;img src="..." alt="" />
+        &lt;div class="badge-count">8&lt;/div>
     &lt;/figure>
             </code></pre>
 
             <footer class="page-footer">
-                <a href="/pages/usage.html" class="footer-button">
-                    <img src="/images/arrow_back.svg" alt="" />Usage
+                <a
+                    href="/pages/components/Alert/alert.html"
+                    class="footer-button"
+                >
+                    <img src="/images/arrow_back.svg" alt="" />Alert
                 </a>
-                <a href="/pages/components/Alert/alert.html" class="footer-button">
-                    Alert
+                <a
+                    href="/pages/components/Button/button.html"
+                    class="footer-button"
+                >
+                    Button
                     <img src="/images/arrow_forward.svg" alt="" />
                 </a>
             </footer>
@@ -193,5 +179,4 @@
             hljs.highlightAll();
         </script>
     </body>
-    
 </html>
