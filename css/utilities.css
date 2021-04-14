@@ -2,26 +2,34 @@
     box-sizing: border-box;
 }
 
-.disp-block {
+.block {
     display: block;
 }
 
-.disp-inline {
+.inline {
     display: inline;
 }
 
-.disp-flex {
+.flex {
     display: flex;
 }
 
-.flx-spc-btw {
+.flex-spc-btw {
     justify-content: space-between;
 }
 
-.flx-wrap {
+.flex-wrap {
     flex-wrap: wrap;
 }
 
 .box-shadow {
     box-shadow: 0px 0px 20px 0px #e3dddd, 20px -17px 60px #ffffff;
+}
+
+.w-1 {
+    width: 1em;
+}
+
+.w-2 {
+    width: 2em;
 }

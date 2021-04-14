@@ -1,11 +1,13 @@
 .card {
-    width: max-content;
     border: 2px solid #f0f0f3;
-    padding: 1em;
+    padding: 0.5em;
     border-radius: 0.5em;
     position: relative;
     margin: 0.1em;
     cursor: pointer;
+    list-style: none;
+    width: var(--card-width);
+    max-width: var(--card-max-width);
 }
 
 .card:hover {
@@ -13,19 +15,20 @@
 }
 
 .card-cover {
-    width: 11em;
-    border-radius: 0.5em;
-    margin-bottom: 0.5em;
+    width: auto;
+    height: var(--card-img-height);
+    border-radius: 0.2em;
+    margin-bottom: 0.3em;
 }
 
 .card-icon {
     position: absolute;
-    top: 1.4em;
-    right: 1.35em;
-    padding: 0.6em 0.6em 0.2em;
+    top: 1em;
+    right: 0.95em;
+    padding: 0.6em 0.6em 0.25em;
     background-color: #f0f0f3;
     border-radius: 0.5em;
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 .card-icon:hover {
@@ -38,11 +41,12 @@
 }
 
 .card-text {
-    width: 11em;
+    width: 100%;
 }
 
 .card-heading {
     font-weight: 500;
+    font-size: 0.95rem;
 }
 
 .card-sub-heading {
@@ -50,7 +54,8 @@
 }
 
 .card-price {
-    margin-top: 0.5em;
+    margin-top: 0.3em;
+    font-size: 0.95rem;
 }
 
 .price-discounted {
@@ -60,7 +65,7 @@
     text-decoration: line-through;
     color: #9b9ba0;
     margin-left: 0.3em;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
 .card-hz {
@@ -102,6 +107,64 @@
 
 .card-hz .price-original {
     font-size: 0.9rem;
+}
+
+.horizontal-card {
+    display: flex;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.horizontal-card .card-cover {
+    height: 8em;
+    width: auto;
+}
+
+.horizontal-card .card-icon {
+    opacity: 0.6;
+}
+
+.horizontal-card .card-icon:hover {
+    opacity: 1;
+}
+
+.horizontal-card .card-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0.5em;
+}
+
+.horizontal-card .card-heading {
+    font-size: 1rem;
+}
+
+.horizontal-card .card-sub-heading {
+    font-size: 0.9rem;
+}
+
+.horizontal-card .card-para {
+    margin-top: 1em;
+}
+
+.horizontal-card .price-discounted {
+    font-size: 1.3rem;
+}
+
+.horizontal-card .price-original {
+    font-size: 0.9rem;
+}
+
+@media (min-width: 441px) {
+    .card {
+        padding: 1em;
+    }
+
+    .card-icon {
+        top: 1.45em;
+        right: 1.45em;
+    }
 }
 
 @media (max-width: 720px) {

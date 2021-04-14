@@ -1,6 +1,7 @@
 .avatar {
     margin: 0.5em;
     position: relative;
+    display: inline;
 }
 
 .avatar > img {
@@ -9,7 +10,6 @@
 }
 
 .avatar-std > img {
-    border-radius: 50%;
     height: 2em;
 }
 
@@ -27,6 +27,10 @@
 
 .avatar-xs > img {
     height: 1em;
+}
+
+.avatar-square > img {
+    border-radius: 25%;
 }
 
 .avatar-presence {
