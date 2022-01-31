@@ -1,6 +1,7 @@
 .badge {
     position: relative;
     cursor: pointer;
+    width: max-content;
 }
 
 .badge-count {
@@ -22,6 +23,18 @@
     align-items: center;
 }
 
+.icon > .badge-count {
+    top: 0;
+    right: 0;
+    font-size: 70%;
+}
+
+.avatar-xl > .badge-count {
+    height: 85%;
+    right: 0.5em;
+    top: -0.4em;
+}
+
 .avatar-std > .badge-count {
-    right: -0.2em;
+    right: -0.4em;
 }
