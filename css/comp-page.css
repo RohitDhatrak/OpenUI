@@ -5,6 +5,9 @@
     --primary-font-colour: #fff;
     --secondary-font-colour: #000;
     --font: "Montserrat", sans-serif;
+    --card-width: 15em;
+    --card-max-width: 90vw;
+    --card-img-height: 20em;
 }
 
 * {
@@ -102,6 +105,15 @@
     align-items: center;
 }
 
+.comp-disp-container > .nav {
+    display: flex;
+    width: 100%;
+}
+
+.comp-disp-container > .nav-screen-error {
+    display: none;
+}
+
 .comp-desc {
     font-size: 1.1rem;
     margin-left: 0.5em;
@@ -193,6 +205,14 @@
         margin-left: 1em;
         margin-right: 1em;
         margin-top: 7em;
+    }
+
+    .comp-disp-container > .nav {
+        display: none;
+    }
+
+    .comp-disp-container > .nav-screen-error {
+        display: block;
     }
 
     .page-footer {
