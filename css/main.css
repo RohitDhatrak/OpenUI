@@ -5,13 +5,14 @@
     font-family: "Montserrat", sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .docs-link {
-    float: right;
     margin-top: 0.5em;
     margin-right: 4em;
     font-size: 1.05rem;
-    cursor: pointer;
-    text-decoration: none;
     color: #000;
 }
 
@@ -37,21 +38,25 @@
 }
 
 .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
     max-width: max-content;
     margin: 0 auto;
 }
 
 .main-start,
 .main-github {
-    border: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #00b594;
     color: #fff;
     height: 3.1em;
     width: 10.6em;
-    font-size: 1rem;
     border-radius: 2em;
-    margin: 0 0.7em;
-    cursor: pointer;
 }
 
 .main-github {
@@ -63,17 +68,5 @@
 @media (max-width: 480px) {
     .docs-link {
         display: none;
-    }
-}
-
-@media (max-width: 410px) {
-    .button-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .main-start {
-        margin-bottom: 1em;
     }
 }

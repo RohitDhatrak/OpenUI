@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .card {
     border: 2px solid #f0f0f3;
     padding: 0.5em;
@@ -22,10 +27,16 @@
 }
 
 .card-icon {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
     position: absolute;
     top: 1em;
     right: 0.95em;
-    padding: 0.6em 0.6em 0.25em;
+    padding: 0.5em;
     background-color: #f0f0f3;
     border-radius: 0.5em;
     opacity: 0.8;
