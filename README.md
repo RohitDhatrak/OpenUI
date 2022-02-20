@@ -18,7 +18,7 @@ Vanilla CSS, highlight.js
   - Standard avatars
   - Avatars with status
 - Alert
-  - Success, Waring and Error alert 
+  - Success, Warning and Error alert 
 - Badge
   - Avatars with badge
   - Icons with badge
@@ -31,7 +31,7 @@ Vanilla CSS, highlight.js
   - Responsive Image
   - Round Image
 - Input
-  - Success, Waring and Error feedback
+  - Success, Warning and Error feedback
 - List
   - Simple list
   - Checkbox list
@@ -40,7 +40,7 @@ Vanilla CSS, highlight.js
 
 ### Things I want to improve/explore further
 - Component library for React
-- I have made [ChakraUI like components](https://github.com/RohitDhatrak/ReadersStash/tree/main/client/src/components/Shared) with styled-components I want to explore this further and maybe extract it into a separate library. If you are interested I talk more about it in this [talk](https://youtu.be/Qs1A76JyutU?t=1465)
+- I have made [ChakraUI like components](https://github.com/RohitDhatrak/ReadersStash/tree/main/client/src/components/Shared) using styled-components I want to explore this further and maybe extract it into a separate library. If you are interested I talk more about it in this [talk](https://youtu.be/Qs1A76JyutU?t=1465) I gave at React Banglore.
 
 ### Connect With Me
 - Twitter – [@rohit_dhatrak_](https://twitter.com/rohit_dhatrak_)
