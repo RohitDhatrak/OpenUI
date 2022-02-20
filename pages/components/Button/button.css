@@ -30,7 +30,7 @@
 }
 
 .btn-danger {
-    background-color: #ef4444;
+    background-color: #b91c1c;
     color: #fff;
     opacity: 0.95;
 }
@@ -64,14 +64,14 @@
 }
 
 .btn-outline-danger {
-    color: #ef4444;
-    border: solid 1px #ef4444;
+    color: #b91c1c;
+    border: solid 1px #b91c1c;
     background-color: transparent;
 }
 
 .btn-outline-danger:hover,
 .btn-outline-danger:focus-visible {
-    background-color: #ef4444;
+    background-color: #b91c1c;
     color: #fff;
 }
 

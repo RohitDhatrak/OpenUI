@@ -31,11 +31,11 @@
 }
 
 .input > input.warn {
-    border: 2px solid #ffae22;
+    border: 2px solid #ca8a04;
 }
 
 .input > div.warn {
-    color: #db9b2c;
+    color: #996a04;
 }
 
 .input > input.success {
