@@ -10,10 +10,10 @@ A CSS component library to speed up your development process while building eleg
 Vanilla CSS, highlight.js
 
 ### Features
-  All the components are fully responsive
-  
-  Import the full library or just import the components you need.
-  
+- User can import the full library or an individual component
+- All the components are fully responsive
+- All the components are keyboard accessible
+- All the components have been tested for contrast issues
 - Avatar
   - Standard avatars
   - Avatars with status
